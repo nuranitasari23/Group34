@@ -40,6 +40,13 @@ nav {
   text-decoration: none;
   color: #222;
 }
+.menu-icon {
+  color: #2222;
+  float: right;
+  font-size: 25px;
+  padding: 21px 0;
+  display: none;
+}
 
 .menu ul {
   display: flex;
@@ -87,6 +94,7 @@ nav {
 }
 
 .button {
+  font-size: 50px;
   margin: 10px 0;
   background-color: white;
   border-radius: 0;
@@ -97,14 +105,17 @@ nav {
   width: 100px;
   height: 100px;
   position: relative;
-  animation: mymove 5s infinite;
+  animation: mymove 10s infinite;
 }
 @keyframes mymove {
   0% {
-    top: 0px;
+    top: 0;
+  }
+  50% {
+    top: 30px;
   }
   100% {
-    top: 50px;
+    top: 0;
   }
 }
 footer {

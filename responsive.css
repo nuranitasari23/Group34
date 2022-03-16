@@ -1,0 +1,10 @@
+@media all and (max-width: 670px) {
+  .menu {
+    display: none;
+  }
+
+  /* Tambahkan CSS untuk menu-icon */
+  .menu-icon {
+    display: flex;
+  }
+}
