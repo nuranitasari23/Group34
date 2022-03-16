@@ -9,7 +9,8 @@ html {
 }
 
 .container {
-  margin: 180px 0 2000px 0;
+  margin: 180px 0 200px 0;
+  padding: 0 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -82,11 +83,87 @@ nav {
 }
 .second-word {
   text-align: center;
-  margin: 1 0px 0 20px 0;
+  margin: 30px 0 30px 0;
 }
 
 .button {
+  margin: 10px 0;
   background-color: white;
   border-radius: 0;
   border: 2px solid #222;
+  box-sizing: border-box;
+}
+.buttons {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  animation: mymove 5s infinite;
+}
+@keyframes mymove {
+  0% {
+    top: 0px;
+  }
+  100% {
+    top: 50px;
+  }
+}
+footer {
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100%;
+  padding-top: 40px;
+  color: #fff;
+}
+
+.footer-atas {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-atas h3 {
+  font-size: 36px;
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 48px;
+}
+
+.footer-atas p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+  color: #cacdd2;
+}
+
+.footer-bawah {
+  background: #000;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.footer-bawah p {
+  float: right;
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+
+.footer-bawah p a {
+  color: #44bae8;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.footer-bawah span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
 }
